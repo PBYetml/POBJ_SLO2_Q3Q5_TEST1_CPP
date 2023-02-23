@@ -3,7 +3,7 @@
 
 #include "Signal.h"
 
-class Triangle : Signal
+class Triangle : public Signal
 {
 	public:
 		void CalculerEchantillons(int Amplitude, int DutyCycle);
