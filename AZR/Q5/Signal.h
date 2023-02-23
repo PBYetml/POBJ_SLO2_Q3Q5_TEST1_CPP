@@ -1,5 +1,5 @@
-#ifndef SIGN_H
-#define SIGN_H
+#ifndef SIGNAL_H
+#define SIGNAL_H
 
 
 /**
@@ -66,4 +66,4 @@ private:
 
 };
 
-#endif // CERCLE_H
+#endif // SIGNAL_H
