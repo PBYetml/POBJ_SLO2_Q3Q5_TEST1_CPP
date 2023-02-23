@@ -13,7 +13,8 @@ int main()
 	Select_Var_Flottant(&var_f_1);
 	Select_Var_Flottant(&var_f_2);
 
-	std::cout << "Soustraction mode affichage flottant : X - Y = " << cout.precision(3) << var_f_1 << " - " << var_f_2 << " = " << (var_f_1 - var_f_2) << std::endl;
+    std::cout << setiosflags(std::ios::scientific);
+	std::cout << "Soustraction mode affichage flottant : X - Y = " << std::cout.precision(3) << var_f_1 << " - " << var_f_2 << " = " << (var_f_1 - var_f_2) << std::endl;
 }
 
 void Select_Var_Flottant(float* valRetour)
