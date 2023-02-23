@@ -5,7 +5,7 @@
 
 class Signal;
 
-class GenerateurSignal : public Utilisateur {
+class GenerateurSignal {
 
  public:
 
