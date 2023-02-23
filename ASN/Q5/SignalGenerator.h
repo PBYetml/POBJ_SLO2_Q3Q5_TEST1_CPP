@@ -1,12 +1,16 @@
-//#ifndef SIGNALGENERATOR_H
-//#define SIGNALGENERATOR_H
+#ifndef SIGNALGENERATOR_H
+#define SIGNALGENERATOR_H
 
 class SignalGenerator
 {
-	int m_Frequence;
-	int m_Amplitude;
+public:
+	int ChooseSignal();
+	void ChooseFrequency();
+	void ChooseAmplitude();
 
-	int ChoisirSignal();
-	void ChoisirFrequence();
-	void ChoisirAmplitude();
+private:
+	int m_Frequency;
+	int m_Amplitude;
 };
+
+#endif
