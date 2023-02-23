@@ -5,7 +5,7 @@
 using namespace std;
 
 //--- Declaration de prototype ---//
-void Select_Var_Flottant(float* valRetour);
+void Select_Var_Flottant(float &valRetour);
 
 //--- Programme principale ---//
 int main()
@@ -18,12 +18,14 @@ int main()
 	Select_Var_Flottant(var_f_2);
 	
 	//--- Message utilisateur ---//
-	cout << "soustraction mode affichage flottant: X - Y = %.3" << var_f_1 << " - %.3" << var_f_2 << " = %.3" << (var_f_1 - var_f_2) << endl;
+	cout << setiosflags(std::ios::scientific);
+	cout.precision(3);
+	cout << "soustraction mode affichage flottant: X - Y = " << var_f_1 << " - " << var_f_2 << " = " << (var_f_1 - var_f_2) << endl;
 	
 	return 0;
 }
 
-void Select_Var_Flottant(float* valRetour)
+void Select_Var_Flottant(float &valRetour)
 {
 	//--- Fonction pour lire la saisie d'une chaine de caractere ---//
 	cin >> valRetour;
