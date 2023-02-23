@@ -1,6 +1,6 @@
 #ifndef Signal_h
 #define Signal_h
-#include "GenerateurSignal.h"
+
 
 class Signal {
 
