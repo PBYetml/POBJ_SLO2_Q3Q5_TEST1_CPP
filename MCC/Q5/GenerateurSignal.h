@@ -5,12 +5,16 @@
 class GenerateurSignal {
 
  public:
+	
+    GenerateurSignal();
 
     int ChoisirSignal();
 
     void ChoisirFrequence();
 
     void ChoisirAmplitude();
+	
+    ~GenerateurSignal();
 	
 private:
  
