@@ -1,5 +1,6 @@
 //--- librairie standard ---//
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
