@@ -12,8 +12,8 @@ public:
 	void ObserverSignal();
 
 
-private:
-	int m_CodeFormeChoisie;
+//private:
+	//int m_CodeFormeChoisie;
 
 public:
 
