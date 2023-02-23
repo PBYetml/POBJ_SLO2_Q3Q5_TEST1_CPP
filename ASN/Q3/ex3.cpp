@@ -1,5 +1,6 @@
-// Standard Library //
+    // Standard Library //
 #include <iostream>
+#include <iomanip>
 
 // Prototype Declaration //
 void Select_Var_Flottant(float* valRetour);
