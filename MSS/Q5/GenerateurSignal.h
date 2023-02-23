@@ -3,7 +3,7 @@
 
 #include "Signal.h"
 
-class GenerateurSignal : private Signal
+class GenerateurSignal
 {
 	public:
 		int ChoisirSignal();
