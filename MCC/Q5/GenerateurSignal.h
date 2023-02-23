@@ -1,6 +1,8 @@
 #ifndef GenerateurSignal_h
 #define GenerateurSignal_h
 
+#include <Signal.h>
+
 
 class GenerateurSignal {
 
@@ -21,6 +23,8 @@ private:
 	int m_Frequence;
 	
 	int m_Amplitude;
+	
+	Signal Signal;
 
  public:
 };
