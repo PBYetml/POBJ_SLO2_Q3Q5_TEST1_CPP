@@ -3,10 +3,12 @@
 
 #include "GenerateurSignal.h"
 
-class Utilisateur : public GenerateurSignal
+class Utilisateur
 {
-	void ConfigurerGenerateur();
-	void ObserverSignal();
+	public:
+		void ConfigurerGenerateur();
+		void ObserverSignal();
+		GenerateurSignal *myGenerateurSignal;
 };
 
 #endif // !POBJ_Epreuve_260123_Question5_h
