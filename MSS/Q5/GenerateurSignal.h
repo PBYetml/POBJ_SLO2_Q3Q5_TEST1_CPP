@@ -13,6 +13,7 @@ class GenerateurSignal : private Signal
 	private:
 		int m_Frequence;
 		int m_Amplitude;
+		Signal MySignal;
 };
 
 #endif // !GenerateurSignal_h
