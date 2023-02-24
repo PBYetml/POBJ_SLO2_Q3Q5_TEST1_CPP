@@ -1,6 +1,7 @@
 #ifndef Utilisateur_h
 #define Utilisateur_h
 
+#include "GenerateurSignal.h"
 
 class Utilisateur {
 
