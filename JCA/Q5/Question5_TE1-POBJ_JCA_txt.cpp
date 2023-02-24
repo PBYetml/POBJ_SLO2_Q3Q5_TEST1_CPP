@@ -1,14 +1,5 @@
 TE5_QUESTION3_JONATHANCHAFLA
 
-#include <iostream>
-
-using namespace std;
-
-#include "Utilisateur.h"
-#include "GenerateurSignal.h"
-#include "Signal.h"
-#include "Triangle.h"
-
 
 //class 
 
@@ -36,7 +27,7 @@ class Utilisateur
 #ifndef GenerateurSignal_h
 #define GenerateurSignal_h
 
-class Utilisateur;
+#include "Utilisateur.h"
 
 class GenerateurSignal
 {
@@ -45,9 +36,6 @@ class GenerateurSignal
 		int ChoisirSignal();
 		void ChoisirFrequence ();
 		void ChoisirAmplitude();
-
-	public :
-		Utilisateur *MyUtilisateur;
 
 	private: 
 		int m_Frequence;
@@ -59,19 +47,23 @@ class GenerateurSignal
 -------------------------------------------------------
 #ifndef Signal_h
 #define Signal_h
+	
+#include "GenerateurSignal.h"
 
 class Signal
 {
-	public :
+	public : 
 
-		int m_TableEch [20];
-		int m_PeriodeEchantillonage;
-
-	void CalculerEchantillons(intAmplitude, int DutyCycle);
+	virtual void CalculerEchantillons ( int Amplitude, int Duty_cycle);
 	void AfficherEchantillons ();
 
 	private : 
-		void GetPeriodeEch ();
+		int GetPeriodeEch ();
+	
+	protected :
+
+		int m_TableEch [20];
+		int m_PeriodeEchantillonage;
 }
 #endif // Signal_h
 
@@ -79,11 +71,11 @@ class Signal
 #ifndef Triangle_h
 #define Triangle_h
 
-class Triangle : public Signal 
+class Triangle : public Signal
 {
-	public:
+public:
 
-		void CalculerEchantillons(int Amplitude, int DutyCycle);
+	virtual void CalculerEchantillons(int Amplitude, int DutyCycle);
 }
 #endif // Triangle_h
 
