@@ -6,6 +6,8 @@
   *
   */
 
+class GenerateurSignal;
+
 class Utilisateur
 {
 public:
