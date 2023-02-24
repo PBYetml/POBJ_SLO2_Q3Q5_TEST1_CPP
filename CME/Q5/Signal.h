@@ -7,7 +7,7 @@ class Signal {
 public:
 
 
-	void CalculerEchantillons(int Amplitude, int Duty_cycle);
+	virtual void CalculerEchantillons(int Amplitude, int Duty_cycle);
 	void AfficherEchantillons();
 	
 
