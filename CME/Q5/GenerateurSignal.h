@@ -1,6 +1,6 @@
 #ifndef GenerateurSignal_h
 #define GenerateurSignal_h
-
+#inculde "Signal.h"
 
 class GenerateurSignal {
 
