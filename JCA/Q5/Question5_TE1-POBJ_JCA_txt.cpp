@@ -29,6 +29,8 @@ class Utilisateur
 
 #include "Utilisateur.h"
 
+class Signal;
+
 class GenerateurSignal
 {
 	public :
@@ -40,7 +42,10 @@ class GenerateurSignal
 	private: 
 		int m_Frequence;
 		int m_Amplitude;
-
+	
+	public:
+    		Signal *mySignal;
+    		Utilisateur *myUtilisateur;
 }
 #endif // GenerateurSignal_h
 
@@ -48,9 +53,9 @@ class GenerateurSignal
 #ifndef Signal_h
 #define Signal_h
 	
-#include "GenerateurSignal.h"
+class GenerateurSignal;
 
-class Signal
+class Signal : public
 {
 	public : 
 
@@ -70,6 +75,9 @@ class Signal
 -------------------------------------------------------
 #ifndef Triangle_h
 #define Triangle_h
+	
+#include "Signal.h"
+
 
 class Triangle : public Signal
 {
