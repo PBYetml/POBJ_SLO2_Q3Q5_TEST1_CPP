@@ -2,6 +2,9 @@ TE1_QUESTION3_JONATHANCHAFLA
 
 //libraire standart
 #include <iostream>
+using namespace std; // pour l'utilisation de cin et cout
+
+#include <iomanip>
 
 //declaration de prototype
 void Select_Var_Flottant (float &valRetour);
@@ -18,8 +21,10 @@ int main ()
 	Select_Var_Flottant(var_f_2);
 
 	//message utilisateur//
-	std :: cout << "Soustraction mode affichage flottant : X - Y = %1.3e - %1.3e = %1.3e" << var_f_1 << var_f_2 << (var_f_1 - var_f_2);
-
+	cout << setiosflags(ios::scientific);
+	cout << "soustraction mode affichage flottant : X - Y = " << cout.precision(3) 
+		<< var_f_1 << " - " << var_f_2 << " = " << (var_f_1 - var_f_2) << endl;
+	
 	return 0;
 
 }
