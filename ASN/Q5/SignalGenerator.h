@@ -17,7 +17,7 @@ private:
 	int m_Frequency;
 	int m_Amplitude;
 
-	Signal *mySignal;
+	Signal mySignal;
 };
 
 #endif

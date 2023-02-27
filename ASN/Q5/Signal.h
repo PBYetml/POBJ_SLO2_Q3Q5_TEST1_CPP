@@ -6,7 +6,7 @@ class Signal
 public:
 	virtual void CalculateSamples(int Amplitude, int DutyCycle);
 
-	virtual void DisplaySamples();
+	void DisplaySamples();
 
 private:
 	int GetSamplePeriod();

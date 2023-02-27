@@ -27,11 +27,6 @@ class Signal {
      * @element-type GenerateurSignal
      */
     GenerateurSignal myGenerateurSignal;
-
-    /**
-     * @element-type GenerateurSignal
-     */
-    GenerateurSignal myGenerateurSignal;
-};
+ };
 
 #endif // Signal_h
