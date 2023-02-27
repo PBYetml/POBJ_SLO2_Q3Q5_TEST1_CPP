@@ -6,11 +6,12 @@
 class SignalGenerator
 {
 public:
+	SignalGenerator();
+
 	int ChooseSignal();
 	void ChooseFrequency();
 	void ChooseAmplitude();
 
-	SignalGenerator();
 	~SignalGenerator();
 
 private:
