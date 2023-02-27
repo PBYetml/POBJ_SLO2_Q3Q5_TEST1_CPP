@@ -1,13 +1,15 @@
 #ifndef USER_H
 #define USER_H
 
-#include "SignalGenerator.h"
+class SignalGenerator;
 
-class User : public SignalGenerator
+class User
 {
 public:
 	void ConfigGenerator();
 	void ObserveSignal();
+
+	SignalGenerator *mySignalGenerator;
 };
 
 #endif

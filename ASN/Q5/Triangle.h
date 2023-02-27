@@ -7,7 +7,6 @@ class Triangle: public Signal
 {
 public:
 	void CalculateSamples(int Amplitude, int DutyCycle);
-
 };
 
 #endif

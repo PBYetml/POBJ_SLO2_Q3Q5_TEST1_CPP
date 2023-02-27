@@ -4,9 +4,9 @@
 class Signal
 {
 public:
-	void CalculateSamples(int Amplitude, int DutyCycle);
+	virtual void CalculateSamples(int Amplitude, int DutyCycle);
 
-	void DisplaySamples();
+	virtual void DisplaySamples();
 
 private:
 	int GetSamplePeriod();
