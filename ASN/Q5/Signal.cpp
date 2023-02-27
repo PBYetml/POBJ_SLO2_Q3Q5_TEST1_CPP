@@ -1,6 +1,6 @@
 #include "Signal.h"
 
-void Signal::CalculateSamples(int Amplitude, int DutyCycle) {}
+virtual void Signal::CalculateSamples(int Amplitude, int DutyCycle) {}
 
 void Signal::DisplaySamples() {}
 
